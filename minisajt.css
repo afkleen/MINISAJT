@@ -32,16 +32,21 @@ body {
 .title {
   border: 5px;
   text-align: center;
-  justify-content: center;
-  justify-items: center;
   font-family: nikefont;
-  color: #ffe6a7;
+  color: #ac7b00;
   font-size: 100px;
   background-image: url(pexels-josh-hild-2422264.jpg);
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 60%;
+  height: 80vh;
+}
+
+.header {
+  text-align: center;
+  font-family: nikefont;
+  font-size: 22vh;
+  color: #ac7b00;
 }
 
 li {
@@ -64,13 +69,24 @@ a {
   display: flex;
   height: 100%;
   flex-wrap: wrap;
-  height: 60vh;
+  height: 70vh;
+  padding: 1%;
 }
 
+.skating-img {
+  border: 5px;
+  background-image: url(sk8.jpg);
+  height: 70vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  justify-items: center;
+}
 .producttext {
   border: 5px;
   width: 47%;
-  height: 95%;
+  height: 80%;
   font-family: nikefont;
   font-size: 45px;
   background-color: #99582a;
@@ -79,20 +95,20 @@ a {
 }
 
 .shopbox {
-  border: 1px solid snow;
+  border: 1px;
   width: 30%;
   height: 40%;
   position: relative;
   background-color: #ffe6a7;
   transition: all 300ms;
-  margin-top: 200px;
-  margin-left: 30vw;
+  margin-top: 20vh;
+  margin-left: 32vw;
 }
 .shopbox a {
   margin-left: 0;
 }
 
-.shoppingbox {
+.shopbox-img {
   width: 100%;
   height: 100%;
   margin-left: auto;
@@ -117,6 +133,7 @@ a {
 }
 
 .gif {
+  border: 1px;
   width: 40vw;
 }
 .links {
@@ -135,4 +152,38 @@ a {
 
 .links:visited {
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .producttext {
+    width: 100%;
+    height: 300px;
+  }
+  .productpic {
+    width: 100%;
+    height: 150px;
+  }
+
+  .aroundproduct {
+    height: auto;
+  }
+
+  .header {
+    font-size: 70px;
+  }
+  #justdoit {
+    font-size: 40px;
+  }
+  .title {
+    background-attachment: local;
+  }
+  .skating-img {
+    background-attachment: local;
+    background-position: 105rem;
+  }
+  .shopbox {
+    margin-bottom: 10px;
+    margin-left: 240px;
+    margin-top: 93px;
+  }
 }
