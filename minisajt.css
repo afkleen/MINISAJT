@@ -23,7 +23,7 @@ body {
   display: flex;
   position: sticky;
   justify-content: center;
-  height: 60px;
+  height: 50px;
   align-items: center;
   background-color: #432818;
   width: 100%;
@@ -39,7 +39,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
+  height: 94vh;
 }
 
 .header {
@@ -55,7 +55,7 @@ li {
 a {
   text-decoration: none;
   margin: 70px;
-  font-size: 25px;
+  font-size: 30px;
   font-family: nikefont;
 }
 
@@ -65,7 +65,6 @@ a {
 }
 
 .aroundproduct {
-  border: 5px;
   display: flex;
   height: 100%;
   flex-wrap: wrap;
@@ -74,7 +73,6 @@ a {
 }
 
 .skating-img {
-  border: 5px;
   background-image: url(sk8.jpg);
   height: 70vh;
   background-position: center;
@@ -84,7 +82,6 @@ a {
   justify-items: center;
 }
 .producttext {
-  border: 5px;
   width: 47%;
   height: 80%;
   font-family: nikefont;
@@ -92,17 +89,15 @@ a {
   background-color: #99582a;
   padding: 10px;
   margin-left: auto;
+  display: flexbox;
 }
 
 .shopbox {
-  border: 1px;
   width: 30%;
   height: 40%;
-  position: relative;
+
   background-color: #ffe6a7;
   transition: all 300ms;
-  margin-top: 20vh;
-  margin-left: 32vw;
 }
 .shopbox a {
   margin-left: 0;
@@ -122,6 +117,7 @@ a {
 
 #capproducttext {
   margin-right: 20px;
+  margin-left: 0;
 }
 
 .productpic {
@@ -148,6 +144,7 @@ a {
 .shopbox:hover {
   transform: scale(1.04);
   border-radius: 12px;
+  background-color: #ffe6a7;
 }
 
 .links:visited {
@@ -155,9 +152,13 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    width: 430px;
+  }
   .producttext {
     width: 100%;
     height: 300px;
+    font-size: 32px;
   }
   .productpic {
     width: 100%;
@@ -166,6 +167,7 @@ a {
 
   .aroundproduct {
     height: auto;
+    flex-direction: column-reverse;
   }
 
   .header {
@@ -179,11 +181,16 @@ a {
   }
   .skating-img {
     background-attachment: local;
-    background-position: 105rem;
+    background-position: 120rem;
   }
   .shopbox {
     margin-bottom: 10px;
-    margin-left: 240px;
-    margin-top: 93px;
+  }
+  .productpic {
+    min-height: 200px;
+    width: 500px;
+  }
+  .gif {
+    width: auto;
   }
 }
