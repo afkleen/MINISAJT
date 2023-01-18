@@ -75,6 +75,9 @@ input {
   p {
     font-size: 19px;
   }
+  .info-box {
+    width: 65%;
+  }
 
   input {
     width: 80%;
@@ -84,6 +87,7 @@ input {
   }
   .header {
     font-size: 20px;
+    margin: 0;
   }
   .links {
     font-size: 50px;
