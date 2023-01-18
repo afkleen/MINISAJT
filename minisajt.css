@@ -156,7 +156,7 @@ a {
     width: 430px;
   }
   .producttext {
-    width: 100%;
+    width: 390px;
     height: 300px;
     font-size: 32px;
   }
@@ -168,6 +168,7 @@ a {
   .aroundproduct {
     height: auto;
     flex-direction: column-reverse;
+    width: 390px;
   }
 
   .header {
@@ -182,13 +183,14 @@ a {
   .skating-img {
     background-attachment: local;
     background-position: 120rem;
+    width: 100%;
   }
   .shopbox {
     margin-bottom: 10px;
   }
   .productpic {
     min-height: 200px;
-    width: 500px;
+    width: 390px;
   }
   .gif {
     width: auto;
